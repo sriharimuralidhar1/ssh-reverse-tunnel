@@ -80,10 +80,14 @@ gcloud auth login
 
 ## 🚀 Installation
 
-### 1. Clone the Repository
+### 1. Clone the Repository & Quick Start (Recommended)
 ```bash
 git clone <repository-url>
 cd ssh-reverse-tunnel
+# Make scripts executable
+chmod +x *.sh
+
+# Deploy everything with one command
 ./quickstart.sh
 ```
 
@@ -118,18 +122,7 @@ gcloud compute config-ssh
 # Verify SSH key exists
 ls -la ~/.ssh/google_compute_engine*
 ```
-
-### 4. Quick Start (Recommended)
-
-```bash
-# Make scripts executable
-chmod +x *.sh
-
-# Deploy everything with one command
-./quickstart.sh
-```
-
-This will automatically:
+**By the end of this installation this will have done the following automatically:**
 - ✅ Check all prerequisites
 - 🚀 Start/create your GCP instance
 - 🔐 Configure SSH authentication
