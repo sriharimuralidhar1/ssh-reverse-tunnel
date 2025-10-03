@@ -118,12 +118,6 @@ check_prerequisites() {
         exit 1
     fi
     
-    if [ ! -f ~/.ssh/google_compute_engine ]; then
-        print_error "Google Compute Engine SSH key not found at ~/.ssh/google_compute_engine"
-        print_info "Run: gcloud compute config-ssh"
-        exit 1
-    fi
-    
     if [ ! -f proxy-server.js ]; then
         print_error "proxy-server.js not found in current directory"
         exit 1
