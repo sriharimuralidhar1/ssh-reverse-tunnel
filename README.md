@@ -124,7 +124,7 @@ ls -la ~/.ssh/google_compute_engine*
 ```
 **By the end of this installation this will have done the following automatically:**
 - ✅ Check all prerequisites
-- 🚀 Start/create your GCP instance
+- 🚀 Start your GCP instance (creation should be done as pre-req , read section to configure GCP instance)
 - 🔐 Configure SSH authentication
 - 🔧 Deploy the proxy server
 - 🔗 Create both SSH tunnels
