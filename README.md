@@ -82,7 +82,7 @@ gcloud auth login
 
 ### 1. Clone the Repository & Quick Start (Recommended)
 ```bash
-git clone <repository-url>
+git clone https://github.com/sriharimuralidhar1/ssh-reverse-tunnel
 cd ssh-reverse-tunnel
 # Make scripts executable
 chmod +x *.sh
