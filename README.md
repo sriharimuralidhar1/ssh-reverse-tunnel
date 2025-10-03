@@ -59,6 +59,11 @@ gcloud auth login
 ```
 
 ### For Existing GCP Users
+```bash
+# 1. Edit config.sh with your values
+# 2. Deploy
+./quickstart.sh
+```
 
 **Required Software:**
 - **Node.js** v12.0.0 or higher
@@ -72,12 +77,14 @@ gcloud auth login
 - **GCP Instance** (e2-micro or larger)
 - **gcloud CLI authenticated**: `gcloud auth login`
 
+
 ## 🚀 Installation
 
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
 cd ssh-reverse-tunnel
+./quickstart.sh
 ```
 
 ### 2. Configure Your Environment
@@ -122,47 +129,6 @@ chmod +x *.sh
 ./quickstart.sh
 ```
 
-> **🎆 That's it!** Your SSH reverse tunnel will be deployed and ready in under 2 minutes.
-
-## 🎉 Streamlined User Experience
-
-### For New Users (Complete Beginners)
-```bash
-# 1. Install Google Cloud SDK
-curl https://sdk.cloud.google.com | bash
-exec -l $SHELL
-
-# 2. Authenticate  
-gcloud auth login
-
-# 3. Setup everything
-./setup-gcp.sh    # Creates project, instance, everything
-
-# 4. Deploy tunnel
-./quickstart.sh   # Ready in under 2 minutes!
-```
-
-### For Existing GCP Users
-```bash
-# 1. Edit config.sh with your values
-# 2. Deploy
-./quickstart.sh
-```
-
-### To Stop Everything
-```bash
-./quickstop.sh
-```
-
-## 💡 Usage
-
-### 🚀 Quick Start (Recommended)
-
-**Deploy everything with one command:**
-```bash
-./quickstart.sh
-```
-
 This will automatically:
 - ✅ Check all prerequisites
 - 🚀 Start/create your GCP instance
@@ -170,6 +136,9 @@ This will automatically:
 - 🔧 Deploy the proxy server
 - 🔗 Create both SSH tunnels
 - 📊 Launch the monitoring interface
+
+> **🎆 That's it!** Your SSH reverse tunnel will be deployed and ready in under 2 minutes.
+
 
 **Stop everything:**
 ```bash
@@ -325,7 +294,6 @@ ssh-reverse-tunnel/
 ├── proxy-server.js         # GCP proxy server
 ├── package.json           # Node.js dependencies & scripts
 ├── index.html             # Default test page
-├── blog-sample.txt        # Technical deep-dive blog post
 ├── README.md              # Installation & usage guide
 ├── LICENSE                # MIT License
 └── .gitignore            # Git ignore patterns
@@ -343,16 +311,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch: `git push origin feature/AmazingFeature`
 5. Open a Pull Request
 
-## 📚 Technical Deep Dive
-
-For a detailed technical explanation of the SSH tunnel architecture and implementation challenges, see [blog-sample.txt](blog-sample.txt) which covers:
-
-- Dual tunnel architecture design
-- SSH connection troubleshooting
-- GCP integration challenges
-- Performance and reliability considerations
-- Security best practices
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -362,19 +320,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by ngrok's elegant tunneling approach
 - Built with Node.js and Google Cloud Platform
 - SSH tunneling concepts from OpenSSH documentation
-
-## 📞 Support
-
-If you have any questions or run into issues:
-
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review the [technical blog post](blog-sample.txt) for detailed explanations
-3. Open an issue on GitHub with:
-   - Your operating system
-   - Node.js version (`node --version`)
-   - gcloud CLI version (`gcloud version`)
-   - Error messages or logs
-
 ---
 
-**Made with ❤️ for developers who need secure, reliable tunneling solutions**
