@@ -1,0 +1,41 @@
+{
+  "name": "ssh-reverse-tunnel",
+  "version": "1.0.0",
+  "description": "SSH reverse tunnel solution with GCP integration and ngrok-style monitoring interface",
+  "main": "quickstart.sh",
+  "scripts": {
+    "start": "node server-monitor.js",
+    "start:monitor": "node server-monitor.js 3000",
+    "start:proxy": "node proxy-server.js 4000 3001",
+    "deploy": "./quickstart.sh",
+    "stop": "./quickstop.sh",
+    "tunnel": "./start-tunnel.sh"
+  },
+  "keywords": [
+    "ssh", 
+    "tunnel", 
+    "reverse-tunnel", 
+    "ngrok", 
+    "gcp", 
+    "google-cloud", 
+    "proxy", 
+    "monitor", 
+    "development",
+    "networking"
+  ],
+  "author": "SSH Reverse Tunnel Project",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/ssh-reverse-tunnel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ssh-reverse-tunnel/issues"
+  },
+  "homepage": "https://github.com/your-username/ssh-reverse-tunnel#readme",
+  "os": ["darwin", "linux"],
+  "preferGlobal": false
+}
